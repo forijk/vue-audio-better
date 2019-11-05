@@ -17,11 +17,10 @@
       </div>
       </div>
     </div>
-
   </div>
 </template>
 <script>
-import Audio from './audio'
+import Audio from './audio.js'
 
 export default {
   mixins: [Audio],
