@@ -1,0 +1,77 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1573030555456'); /* IE9 */
+  src: url('iconfont.eot?t=1573030555456#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'),
+  url('iconfont.woff?t=1573030555456') format('woff'),
+  url('iconfont.ttf?t=1573030555456') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1573030555456#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-notificationfill:before {
+  content: "\e66a";
+}
+
+.icon-roundaddfill:before {
+  content: "\e6d8";
+}
+
+.icon-notificationforbidfill:before {
+  content: "\e6db";
+}
+
+.icon-speed-:before {
+  content: "\e6f8";
+}
+
+.icon-speed-1:before {
+  content: "\e6f9";
+}
+
+.icon-speed-2:before {
+  content: "\e6fa";
+}
+
+.icon-subtract_fill:before {
+  content: "\e808";
+}
+
+.icon-pausecircle-fill:before {
+  content: "\e7cb";
+}
+
+.icon-stopcircle-fill:before {
+  content: "\e7cc";
+}
+
+.icon-playcircle-fill:before {
+  content: "\e7cd";
+}
+
+.icon-pausecircle:before {
+  content: "\e80d";
+}
+
+.icon-stopcircle:before {
+  content: "\e80e";
+}
+
+.icon-playcircle:before {
+  content: "\e80f";
+}
+
+.icon-minus:before {
+  content: "\e828";
+}
+
+.icon-plus:before {
+  content: "\e829";
+}
+

@@ -1,16 +1,23 @@
 <template>
   <div class="vueAudioBetter">
-    <p>{{ _sToMs(seek) }} / {{ _sToMs(duration) }}</p>
-    <p>{{ curProgress }}%</p>
-    <button @click="togglePlayback">{{ playing ? 'Pause' : 'Play' }}</button>
-    <button @click="stop">Stop</button>
-    <button @click="handleSetRate">{{ rate === 1 ? 'Normal' : rate === 0.9 ? 'Slow' : 'Fast'}}</button>
-    <button @click="handleToggleMute">{{ isMute ? 'Mute' : 'Sound' }}</button>
-    <button @click="handleSetVolume(true)">+</button>
-    <button @click="handleSetVolume(false)">-</button>
-
+    <div class="total">
+      <span style="font-weight: 700;">{{ _sToMs(seek) }} / {{ _sToMs(duration) }}</span>
+      <span style="font-weight: 700;">{{ curProgress }}%</span>
+    </div>
+    <div class="operatorButton">
+      <span class="iconfont icon-playcircle-fill" @click="togglePlayback" v-if="!playing"></span>
+      <span class="iconfont icon-pausecircle-fill" @click="togglePlayback" v-else></span>
+      <span class="iconfont icon-stopcircle-fill" @click="stop"></span>
+      <span class="iconfont icon-notificationfill" @click="handleToggleMute" v-if="isMute"></span>
+      <span class="iconfont icon-notificationforbidfill" @click="handleToggleMute" v-else="!isMute"></span>
+      <span class="iconfont icon-roundaddfill" @click="handleSetVolume(true)"></span>
+      <span class="iconfont icon-subtract_fill" @click="handleSetVolume(false)"></span>
+      <span class="iconfont icon-speed-2 rate" @click="handleSetRate" v-if="rate === 0.9"></span>
+      <span class="iconfont icon-speed-1 rate" @click="handleSetRate" v-if="rate === 1"></span>
+      <span class="iconfont icon-speed- rate" @click="handleSetRate" v-if="rate === 1.2"></span>
+    </div>
     <div class="slider" ref="slider" @click="handleModifyProgress">
-      <div class="progressInfo">Progress: </div>
+      <div class="progressInfo"></div>
       <div class="process" :style="{width}"></div>
       <div class="thunk" ref="trunk" :style="{left}">
           <div class="block"></div>
@@ -20,7 +27,9 @@
   </div>
 </template>
 <script>
-import Audio from './audio.js'
+import Audio from './audio.js';
+import './font/iconfont.css';
+
 
 export default {
   name: 'VueAudio',
@@ -143,15 +152,37 @@ export default {
   overflow: hidden;
   width: 500px;
   margin: 0 auto;
-  background-color: rgb(206, 224, 240);
+  background-color: rgb(243, 242, 189);
   border-radius: 8px;
+  box-shadow: 5px 5px 10px -4px #63645e;
+}
+.vueAudioBetter .total {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+.vueAudioBetter .operatorButton {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+.operatorButton .rate {
+  font-size: 32px;
+}
+.operatorButton span {
+  font-size: 24px;
+  cursor: pointer;
 }
 .vueAudioBetter .slider {
   position: relative;
-  margin: 24px auto;
-  width: 400px;
+  margin: 26px auto;
+  width: 80%;
   height: 10px;
-  background: white;
+  background: rgb(248, 247, 247);
   border-radius: 5px;
   cursor: pointer;
 }
