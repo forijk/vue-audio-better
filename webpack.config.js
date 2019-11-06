@@ -35,6 +35,16 @@ module.exports = {
         options: {
           name: "[name].[ext]?[hash]"
         }
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            limit: 10000,
+            name: 'fonts_/[name].[hash:7].[ext]'
+          }
+        }]
       }
     ]
   },
