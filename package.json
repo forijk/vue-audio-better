@@ -1,7 +1,7 @@
 {
   "name": "vue-audio-better",
-  "description": "Easy to create custom audio player components for Vue.",
-  "version": "1.0.2",
+  "description": "Easy to create custom audio player components for Vue.js.",
+  "version": "1.0.3",
   "author": "forijk <forijk@163.com>",
   "license": "MIT",
   "main": "dist/v-audio.js",

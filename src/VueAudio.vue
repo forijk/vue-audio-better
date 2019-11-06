@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="vueAudioBetter">
     <p>{{ _sToMs(seek) }} / {{ _sToMs(duration) }}</p>
     <p>{{ curProgress }}%</p>
     <button @click="togglePlayback">{{ playing ? 'Pause' : 'Play' }}</button>
@@ -139,14 +139,14 @@ export default {
 </script>
 
 <style scoped>
-.wrapper {
+.vueAudioBetter {
   overflow: hidden;
   width: 500px;
   margin: 0 auto;
   background-color: rgb(206, 224, 240);
   border-radius: 8px;
 }
-.slider {
+.vueAudioBetter .slider {
   position: relative;
   margin: 24px auto;
   width: 400px;
@@ -155,7 +155,7 @@ export default {
   border-radius: 5px;
   cursor: pointer;
 }
-.process {
+.slider .process {
   position: absolute;
   left: 0;
   top: 0;
@@ -164,14 +164,14 @@ export default {
   border-radius: 5px;
   background: #409eff;
 }
-.thunk {
+.slider .thunk {
   position: absolute;
   left: 100px;
   top: -7px;
   width: 20px;
   height: 20px;
 }
-.block {
+.slider .block {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -179,11 +179,11 @@ export default {
   background: rgba(255, 255, 255, 1);
   transition: 0.2s all;
 }
-.block:hover {
+.slider .block:hover {
   transform: scale(1.1);
   opacity: 0.6;
 }
-.progressInfo {
+.slider .progressInfo {
   position: absolute;
   top: -28px;
   color: #117eeb;
