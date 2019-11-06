@@ -23,6 +23,7 @@
 import Audio from './audio.js'
 
 export default {
+  name: 'VueAudio',
   mixins: [Audio],
   data() {
     return {
@@ -70,7 +71,7 @@ export default {
     }
   },
   methods: {
-    
+
     handleModifyProgress(e) {
       if (e.target.className === 'slider' || e.target.className === 'process') {
         let scale = e.offsetX / this.slider.offsetWidth;
