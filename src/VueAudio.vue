@@ -160,6 +160,7 @@ export default {
   background-color: rgb(243, 242, 189);
   border-radius: 8px;
   box-shadow: 5px 5px 10px -4px #63645e;
+  background-image: linear-gradient(to right, #9ca5f5, #7ff5ae);
 }
 .vueAudioBetter .total {
   margin: 20px auto;
@@ -224,5 +225,10 @@ export default {
   top: -28px;
   color: #117eeb;
   font-weight: 600;
+}
+.operatorButton .iconfont:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
 }
 </style>
