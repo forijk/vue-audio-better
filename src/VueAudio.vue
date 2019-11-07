@@ -1,5 +1,5 @@
 <template>
-  <div class="vueAudioBetter">
+  <div class="vueAudioBetter" :style="{width: totalWidth}">
     <div class="total">
       <span style="font-weight: 700;">{{ _sToMs(seek) }} / {{ _sToMs(duration) }}</span>
       <span style="font-weight: 700;">{{ curProgress }}%</span>
@@ -18,7 +18,7 @@
     </div>
     <div class="slider" ref="slider" @click="handleModifyProgress">
       <div class="progressInfo"></div>
-      <div class="process" :style="{width}"></div>
+      <div class="process" :style="{width: pWidth}"></div>
       <div class="thunk" ref="trunk" :style="{left}">
           <div class="block"></div>
       </div>
@@ -34,6 +34,7 @@ import './font/iconfont.css';
 export default {
   name: 'VueAudio',
   mixins: [Audio],
+  props: ['width'],
   data() {
     return {
       min: 0,
@@ -43,7 +44,8 @@ export default {
       per: 0,
       rate: 1,
       isMute: true,
-      curVolume: 0.5
+      curVolume: 0.5,
+      totalWidth: 500
     }
   },
   watch: {
@@ -64,7 +66,7 @@ export default {
       let scale = (this.per - this.min) / (this.max - this.min);
       return scale;
     },
-    width(){
+    pWidth(){
       if(this.slider){
         return this.slider.offsetWidth * this.scale + 'px';
       }else{
@@ -121,16 +123,19 @@ export default {
     }
   },
   mounted () {
+    if(this.width && typeof this.width === 'number') {
+      this.totalWidth = this.width + 'px';
+    }
     // 设置音量
     this.setVolume(this.curVolume);
     this.slider = this.$refs.slider;
     this.thunk = this.$refs.trunk;
     this.thunk.onmousedown = e => {
-        let width = parseInt(this.width);
+        let pWidth = parseInt(this.pWidth);
         let disX = e.clientX;
         document.onmousemove = e => {
             // 拖拽的时候获取的新width
-            let newWidth = e.clientX - disX + width;
+            let newWidth = e.clientX - disX + pWidth;
             // 拖拽的时候得到新的百分比
             let scale = newWidth / this.slider.offsetWidth;
             this.per = Math.ceil((this.max - this.min) * scale + this.min);
