@@ -40,6 +40,12 @@ Vue.use(VueAudio)
 
 ## Props
 
+### `width`
+
+Type: `Number` - Default: `500`
+
+Audio width
+
 ### `sources`
 
 Type: `String[]` - Required
