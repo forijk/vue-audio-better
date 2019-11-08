@@ -1,7 +1,7 @@
 {
   "name": "vue-audio-better",
   "description": "Easy to create custom audio player components for Vue.js.",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "forijk <forijk@163.com>",
   "license": "MIT",
   "main": "dist/v-audio.js",
@@ -13,11 +13,21 @@
     "howler": "^2.1.2",
     "vue": "^2.6.10"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forijk/vue-audio-better.git"
+  },
+  "homepage": "https://github.com/forijk/vue-audio-better/blob/master/README.md",
   "keywords": [
     "front-end",
     "javascript",
     "web",
     "vue",
+    "sound",
+    "mp3",
+    "vueaudio",
+    "vue audio",
+    "vue-audio",
     "vuejs",
     "audio",
     "audio.js",
