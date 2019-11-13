@@ -14,6 +14,10 @@
 npm install  vue-audio-better --save
 ```
 
+## Update
+
+Add animation...
+
 ## Setup
 
 ### Bundler (Webpack, Rollup)

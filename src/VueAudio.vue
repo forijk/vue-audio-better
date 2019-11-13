@@ -175,6 +175,7 @@ export default {
   align-items: center;
   justify-content: space-around;
   width: 80%;
+  height: 38px;
 }
 .operatorButton .rate {
   font-size: 32px;
@@ -182,6 +183,12 @@ export default {
 .operatorButton span {
   font-size: 24px;
   cursor: pointer;
+}
+.operatorButton span:hover {
+  font-size: 32px;
+}
+.operatorButton span:last-child:hover {
+  font-size: 36px;
 }
 .vueAudioBetter .slider {
   position: relative;
