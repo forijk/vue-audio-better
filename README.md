@@ -46,11 +46,11 @@ Type: `Number` - Default: `500`
 
 Audio width
 
-### `sources`
+### `source`
 
-Type: `String[]` - Required
+Type: `String` - Required
 
-An array of audio file urls
+An string of audio file url
 
 ### `html5`
 

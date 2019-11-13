@@ -8,14 +8,12 @@ export default {
     /**
      * An array of audio file urls
      */
-    sources: {
-      type: Array,
+    source: {
+      type: String,
       required: true,
-      validator(sources) {
+      validator(source) {
         // Every source must be a non-empty string
-        return sources.every(
-          source => typeof source === "string" && source.length > 0
-        );
+        return typeof source === "string" && source.length > 0
       }
     },
     /**
@@ -210,7 +208,7 @@ export default {
       }
     },
 
-    sources(sources) {
+    source(source) {
       this._reinitialize();
     }
   },
@@ -228,7 +226,7 @@ export default {
      */
     _initialize() {
       this.$data._howl = new Howl({
-        src: this.sources,
+        src: this.source,
         volume: this.volume,
         html5: this.html5,
         loop: this.loop,
