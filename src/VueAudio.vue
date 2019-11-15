@@ -182,10 +182,15 @@ export default {
 }
 .operatorButton span {
   font-size: 24px;
+  color: #0c0c0cb8;
   cursor: pointer;
 }
+.operatorButton span:first-child {
+  color: #4a3535;
+  font-size: 28px;
+}
 .operatorButton span:hover {
-  font-size: 32px;
+  font-size: 30px;
 }
 .operatorButton span:last-child:hover {
   font-size: 36px;
