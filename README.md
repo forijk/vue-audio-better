@@ -3,7 +3,9 @@
 [![npm](https://img.shields.io/badge/npm-v1.0.8-blue)](https://www.npmjs.com/package/vue-audio-better) [![vue2](https://img.shields.io/badge/vue-2.x-green)](https://vuejs.org/)
 
 > Easy to create custom audio player components for Vue.js.
+
 > A progress bar with soul.
+
 > 一个有灵魂的进度条。
 
 ## Overview
