@@ -41,7 +41,7 @@ Vue.use(VueAudio)
 ```js
 
   <vue-video
-    :src="https://example.com/some_audio.mp3"
+    source="https://example.com/some_audio.mp3"
   ></vue-video>
 
 ```
