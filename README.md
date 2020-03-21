@@ -8,6 +8,8 @@
 
 > 一个有灵魂的进度条。
 
+> 简单、有趣的 audio 组件，非常感谢您的 star.
+
 ## Overview
 
 ![demo](https://upload-images.jianshu.io/upload_images/14529741-470e99c10ca2103d.png?imageMogr2/auto-orient/strip|imageView2/2/w/372/format/webp)
@@ -20,7 +22,7 @@ npm install  vue-audio-better --save
 
 ## Update
 
-Add animation...
+Modify README.md
 
 ## Setup
 
