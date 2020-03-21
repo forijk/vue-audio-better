@@ -40,9 +40,9 @@ Vue.use(VueAudio)
 
 ```js
 
-  <vue-video
+  <vue-audio
     source="https://example.com/some_audio.mp3"
-  ></vue-video>
+  ></vue-audio>
 
 ```
 
