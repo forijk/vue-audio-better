@@ -9,7 +9,7 @@
       <span class="iconfont icon-pausecircle-fill" @click="togglePlayback" v-else></span>
       <span class="iconfont icon-stopcircle-fill" @click="stop"></span>
       <span class="iconfont icon-notificationfill" @click="handleToggleMute" v-if="isMute"></span>
-      <span class="iconfont icon-notificationforbidfill" @click="handleToggleMute" v-else="!isMute"></span>
+      <span class="iconfont icon-notificationforbidfill" @click="handleToggleMute" v-else></span>
       <span class="iconfont icon-roundaddfill" @click="handleSetVolume(true)"></span>
       <span class="iconfont icon-subtract_fill" @click="handleSetVolume(false)"></span>
       <span class="iconfont icon-speed-2 rate" @click="handleSetRate" v-if="rate === 0.9"></span>
@@ -22,14 +22,12 @@
       <div class="thunk" ref="trunk" :style="{left}">
           <div class="block"></div>
       </div>
-      </div>
     </div>
   </div>
 </template>
 <script>
 import Audio from './audio.js';
 import './font/iconfont.css';
-
 
 export default {
   name: 'VueAudio',
