@@ -41,7 +41,7 @@ Vue.use(VueAudio)
 ```js
 
   <vue-audio
-    source="https://example.com/some_audio.mp3"
+    src="https://example.com/some_audio.mp3"
   ></vue-audio>
 
 ```
@@ -54,7 +54,7 @@ Type: `Number` - Default: `500`
 
 Audio width
 
-### `source`
+### `src`
 
 Type: `String` - Required
 
