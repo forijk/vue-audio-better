@@ -17,7 +17,7 @@
 ## Installation
 
 ```bash
-npm install  vue-audio-better --save
+npm install vue-audio-better --save
 ```
 
 ## Update
@@ -40,7 +40,7 @@ Vue.use(VueAudio)
 
 ### Required Markup
 
-```js
+```vue
 
   <vue-audio
     src="https://example.com/some_audio.mp3"
@@ -60,7 +60,7 @@ Audio width
 
 Type: `String` - Required
 
-An string of audio file url
+A string of audio file URL
 
 ### `html5`
 
