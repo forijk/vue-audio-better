@@ -104,6 +104,96 @@ Type: `Boolean` - Default: `false`
 Whether to enable the `withCredentials` flag on XHR requests
 used to fetch audio files when using Web Audio API ([see reference](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/withCredentials))
 
+## Data
+
+### `playing`
+
+Type: `Boolean`
+
+Whether audio is currently playing
+
+### `muted`
+
+Type: `Boolean`
+
+Whether the audio playback is muted
+
+### `volume`
+
+Type: `Number`
+
+The volume of the playback on a scale of `0` to `1`
+
+### `rate`
+
+Type: `Number`
+
+The rate (speed) of the playback on a scale of `0.5` to `4`
+
+### `seek`
+
+Type: `Number`
+
+The position of the playback in seconds
+
+### `duration`
+
+Type: `Number`
+
+The duration of the audio in seconds
+
+### `progress`
+
+Type: `Number`
+
+The progress of the playback on a scale of `0` to `1`
+
+## Methods
+
+### `play()`
+
+Start the playback
+
+### `pause()`
+
+Pause the playback
+
+### `togglePlayback()`
+
+Toggle playing or pausing the playback
+
+### `stop()`
+
+Stop the playback (also resets the `seek` to `0`)
+
+### `mute()`
+
+Mute the playback
+
+### `unmute()`
+
+Unmute the playback
+
+### `toggleMute()`
+
+Toggle muting and unmuting the playback
+
+### `setVolume(volume)`
+
+Set the volume of the playback (value is clamped between `0` and `1`)
+
+### `setRate(rate)`
+
+Set the rate (speed) of the playback (value is clamped between `0.5` and `4`)
+
+### `setSeek(seek)`
+
+Set the position of the playback (value is clamped between `0` and `duration`)
+
+### `setProgress(progress)`
+
+Set the progress of the playback (value is clamped between `0` and `1`)
+
 ## Development
 
 ### Build
