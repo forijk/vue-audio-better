@@ -162,12 +162,12 @@ export default {
             this.rate = this.$data._howl.rate();
           }
         },
-        {
-          name: "seek",
-          hook: () => {
-            this.seek = this.$data._howl.seek();
-          }
-        },
+        // {
+        //   name: "seek",
+        //   hook: () => {
+        //     this.seek = this.$data._howl.seek();
+        //   }
+        // },
         "fade"
       ]
     };
