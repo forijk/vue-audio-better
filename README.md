@@ -1,6 +1,6 @@
 # vue-audio-better
 
-[![npm](https://img.shields.io/badge/npm-v1.2.2-blue)](https://www.npmjs.com/package/vue-audio-better) [![vue2](https://img.shields.io/badge/vue-2.x-green)](https://vuejs.org/)
+[![npm](https://img.shields.io/badge/npm-v2.0.0-blue)](https://www.npmjs.com/package/vue-audio-better) [![vue2](https://img.shields.io/badge/vue-2.x-green)](https://vuejs.org/)
 
 > Easy to create custom audio player components for Vue.js.
 
