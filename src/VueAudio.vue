@@ -109,6 +109,7 @@ export default {
       this.setVolume(this.curVolume);
     },
     _sToMs(s) {
+      if(typeof s !== 'number') return '00' + ':' + '00'
       s = parseInt(s);
       let h;
       h = Math.floor(s/60);
