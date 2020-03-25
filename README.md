@@ -4,15 +4,19 @@
 
 > Easy to create custom audio player components for Vue.js.
 
-> A progress bar with soul.
-
 > 一个有灵魂的进度条。
 
-> 简单、有趣的 audio 组件，非常感谢您的 star.
+> A progress bar with soul.
+
+> 简单、有趣的 audio 组件，非常感谢您的 star!
+
+> Simple, fun audio components, Thank you for your star!
 
 ## Overview
 
 ![demo](https://upload-images.jianshu.io/upload_images/14529741-470e99c10ca2103d.png?imageMogr2/auto-orient/strip|imageView2/2/w/372/format/webp)
+
+![demo](./example2.png)
 
 ## Installation
 
@@ -22,7 +26,7 @@ npm install vue-audio-better --save
 
 ## Update
 
-Modify README.md
+Add a mini audio component.
 
 ## Setup
 
@@ -43,8 +47,16 @@ Vue.use(VueAudio)
 ```vue
 
   <vue-audio
-    src="https://example.com/some_audio.mp3"
+    src="https://example.com/example.mp3"
   ></vue-audio>
+
+```
+
+```vue
+
+  <mini-audio
+    src="https://example.com/example.mp3"
+  ></mini-audio>
 
 ```
 

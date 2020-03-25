@@ -1,9 +1,9 @@
 import VueAudio from "./VueAudio.vue";
-import AudioMini from "./AudioMini.vue";
+import MiniAudio from "./MiniAudio.vue";
 
 const Components = {
   VueAudio,
-  AudioMini
+  MiniAudio
 };
 
 const VueAudioPlugin = {

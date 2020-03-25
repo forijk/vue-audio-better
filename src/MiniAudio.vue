@@ -40,7 +40,7 @@ import Audio from './audio.js'
 import './font/iconfont.css'
 
 export default {
-  name: 'VueAudio',
+  name: 'MiniAudio',
   mixins: [Audio],
   props: ['width'],
   data () {
