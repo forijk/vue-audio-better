@@ -14,7 +14,11 @@
 
 ## Overview
 
-![demo](https://upload-images.jianshu.io/upload_images/14529741-470e99c10ca2103d.png?imageMogr2/auto-orient/strip|imageView2/2/w/372/format/webp)
+### Normal
+
+![demo](./example.png)
+
+### Mini
 
 ![demo](./example2.png)
 
