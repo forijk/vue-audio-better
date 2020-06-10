@@ -6,14 +6,14 @@ import assign from "object-assign";
 export default {
   props: {
     /**
-     * An array of audio file urls
+     * A string type url of audio file
      */
-    src: {
+    audioSource: {
       type: String,
       required: true,
-      validator(src) {
-        // Every src must be a non-empty string
-        return typeof src === "string" && src.length > 0
+      validator(audioSource) {
+        // Every audioSource must be a non-empty string
+        return typeof audioSource === "string" && audioSource.length > 0
       }
     },
     /**
@@ -208,7 +208,7 @@ export default {
       }
     },
 
-    src(src) {
+    audioSource(audioSource) {
       this._reinitialize();
     }
   },
@@ -226,7 +226,7 @@ export default {
      */
     _initialize() {
       this.$data._howl = new Howl({
-        src: this.src,
+        src: this.audioSource,
         volume: this.volume,
         html5: this.html5,
         loop: this.loop,
